@@ -1,0 +1,13 @@
+name: jupyter
+prefix: /srv/jupyter
+channels:
+  - conda-forge
+dependencies:
+  - jupyterlab=3.0.16
+  - pip:
+      - batchspawner==1.0.1
+  # add plugins below
+  - sos-notebook
+  - jupyterlab-sos
+  - sos-papermill
+  - nb_conda_kernels
