@@ -2,7 +2,8 @@
 
 buildRepo2Docker([
   imageName: 'jupyter-minimal-conda',
-  pushRegistryNamespace: 'nordborglab'
+  pushRegistryNamespace: 'nordborglab',
+  pushBranches: ['main']
 ])
 
 
