@@ -11,3 +11,6 @@ dependencies:
   - jupyterlab-sos
   - sos-papermill
   - nb_conda_kernels
+  - plotly
+  - jupyter-dash
+  - jupyterlab-drawio
