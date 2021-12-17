@@ -2,7 +2,7 @@
 # take care of source extensions
 # NOTE: not required for pre-packaged conda extensions (source extensions only)
 # if jupyter lab starts and shows "it needs to be re-built" then these are required
-EXTENSIONS="jupyter-dash"
+EXTENSIONS=""
 
 
 if [ -z "$EXTENSIONS" ]; then
@@ -18,4 +18,21 @@ else
   echo "rebuild jupyter lab"
   jupyter lab build
   jupyter lab clean -y
+fi
+
+EXT_TO_ENABLE="igv"
+
+
+if [ -z "$EXT_TO_ENABLE" ]; then
+  echo "no extensions to enable."
+else
+  echo "enabling extensions"
+
+  for EXT in $EXT_TO_ENABLE; do
+    echo "enabling $EXT"
+    jupyter serverextension enable --py $EXT --sys-prefix
+    jupyter labextension enable $EXT --sys-prefix
+    jupyter nbextension install --py $EXT --sys-prefix
+    jupyter nbextension enable --py $EXT --sys-prefix
+  done
 fi

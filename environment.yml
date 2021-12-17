@@ -4,8 +4,10 @@ channels:
   - conda-forge
 dependencies:
   - jupyterlab=3.0.16
+  - nodejs
   - pip:
       - batchspawner==1.0.1
+      - igv-jupyter
   # add plugins below
   - sos-notebook
   - jupyterlab-sos
