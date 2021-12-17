@@ -35,4 +35,8 @@ else
     jupyter nbextension install --py $EXT --sys-prefix
     jupyter nbextension enable --py $EXT --sys-prefix
   done
+
+  echo "rebuild jupyter lab"
+  jupyter lab build
+  jupyter lab clean -y
 fi
