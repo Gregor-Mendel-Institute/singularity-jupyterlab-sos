@@ -3,10 +3,10 @@ prefix: /srv/jupyter
 channels:
   - conda-forge
 dependencies:
-  - jupyterlab=3.0.16
+  - jupyterlab=3.3.2
   - nodejs
   - pip:
-      - batchspawner==1.0.1
+      - batchspawner
       - igv-jupyter
   # add plugins below
   - sos-notebook
