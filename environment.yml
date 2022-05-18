@@ -3,20 +3,17 @@ prefix: /srv/jupyter
 channels:
   - conda-forge
 dependencies:
-  - jupyterlab=3.3.4
+  - jupyterlab=3.4.2
   - nodejs
   - pip:
       - batchspawner
       - igv-jupyter
   # add plugins below
-  - sos-notebook
-  - jupyterlab-sos
-  - sos-papermill
   - nb_conda_kernels
   - plotly
   - jupyter-dash
   - jupyterlab-drawio
-  ## VIM bindings for jupyter cells
-  - jupyterlab_vim
   ## GIT for jupyterlab
   - jupyterlab-git
+  ## Interactive matplotlib
+  - ipympl
