@@ -7,4 +7,5 @@ Extensions included in this repo:
 3. Jupyter-Dash (https://github.com/plotly/jupyter-dash)
 4. Draw-IO (https://github.com/QuantStack/jupyterlab-drawio)
 5. IGV (https://github.com/igvteam/igv-jupyter)
+6. Jupyter LMOD (https://github.com/cmd-ntrf/jupyter-lmod)
 
