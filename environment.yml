@@ -8,8 +8,8 @@ dependencies:
   - pip:
       - batchspawner
       - igv-jupyter
-      ## Tabnine for code autocompletion
-      - jupyterlab_tabnine
+      ## Kite for code autocompletion
+      - jupyterlab-kite>=2.0.2
   # add plugins below
   - sos-notebook
   - jupyterlab-sos
