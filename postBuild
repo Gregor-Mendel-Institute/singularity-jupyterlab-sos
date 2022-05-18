@@ -12,7 +12,7 @@ else
 
   for EXT in $EXTENSIONS; do
     echo "installing $EXT"
-    jupyter labextension install --no-build $EXT
+    jupyter labextension install $EXT
   done
 
   echo "rebuild jupyter lab"
