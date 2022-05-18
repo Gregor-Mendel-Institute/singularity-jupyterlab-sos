@@ -16,3 +16,7 @@ dependencies:
   - plotly
   - jupyter-dash
   - jupyterlab-drawio
+  ## VIM bindings for jupyter cells
+  - jupyterlab_vim
+  ## GIT for jupyterlab
+  - jupyterlab-git
